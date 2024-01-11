@@ -12,11 +12,11 @@
 </head>
 <body>
 <!--    Navbar  -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-sticky-top">
+<nav class="navbar sticky-top navbar-expand-lg navbar-sticky-top border-bottom">
     <div class="container-fluid mx-5">
-        <div class="d-flex align-items-center">
-            <a class="navbar-brand" style="text-decoration: none" href="index.html">Personal</a>
-            <span class="text-white">|</span>
+        <div class="brands d-flex align-items-center">
+            <a class="navbar-brand " style="text-decoration: none" href="index.html">Personal</a>
+            <span class="divider">|</span>
             <a class="navbar-contact" style="text-decoration: none; white-space: nowrap" href="index.html">Contact Me</a>
         </div>
 
@@ -26,9 +26,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
@@ -50,21 +47,74 @@
     </div>
 </nav>
     <!--    Head    -->
-<header>
-<div class="side-top">
-    <div class="image-side-top">
-        <img class="position-absolute top-0" src="asset/images/personal-intro-image.png" alt="">
+<header id="about">
+    <div class="gradient">
+        <div class="container"></div>
     </div>
-    <div class="image-overlay position-absolute top-0"></div>
-</div>
+
+    <div class="index-image container">
+        <img class="rounded" src="asset/images/index.png" alt="">
+    </div>
+    <div class="shape-card container d-block">
+        <div class="flex-card flex-column">
+            <div class="card bg-light mt-4">
+                <div class="card-title">
+                    <div class="inner-text px-4 py-2 text-secondary">
+                        <h1 >Hey!, I'm Benaleo Bayu</h1>
+                        <p><small>Junior Project Manager on Consultant IT corporate now.</small></p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="inner-text px-4 py-2">
+                        <p>
+                            <span><i class="bi bi-bookmark-fill"></i></span>
+                            Junior Project Manager
+                        </p>
+                        <p>
+                            <span><i class="bi bi-at"></i></span>
+                            benaleobayu@gmail.com
+                        </p>
+                        <p>
+                            <span><i class="bi bi-geo-alt-fill"></i></span>
+                            West Jakarta, Indonesia
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light mt-4">
+                <div class="card-body">
+                    <div class="inner-text px-4 py-2 text-secondary">
+                        <small>
+                            Download my curiculum vitae.
+                        </small>
+                        <div class="d-flex">
+                            <a class="btn-download" href="">Download</a>
+                            <a class="btn-download" href="">Download</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wave SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 68-18s 58 18 88 18 58-18 98-5 58 18 88 18 v44h-352z" />
+        </defs>
+        <g>
+            <use xlink:href="#gentle-wave" x="55" y="0" fill="rgba(255, 255, 255, 0.6)"/>
+            <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255, 255, 255, 0.6)"/>
+            <use xlink:href="#gentle-wave" x="50" y="4" fill="rgba(255, 255, 255, 1)"/>
+        </g>
+    </svg>
 </header>
-<main>
-    <div class="content" id="home"></div>
-    <div class="content" id="about"></div>
-    <div class="content" id="experiences"></div>
-    <div class="content" id="courses"></div>
-    <div class="content" id="skills"></div>
-    <div class="content" id="projects"></div>
+<main class="container-fluid">
+<section class="content" id="experiences" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aspernatur consequuntur distinctio dolores exercitationem impedit magnam minima mollitia nisi, officia omnis optio quos ratione repellat sequi tempore vel, voluptates.</section>
+<section class="content" id="courses">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aspernatur consequuntur distinctio dolores exercitationem impedit magnam minima mollitia nisi, officia omnis optio quos ratione repellat sequi tempore vel, voluptates.</section>
+<section class="content" id="skills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aspernatur consequuntur distinctio dolores exercitationem impedit magnam minima mollitia nisi, officia omnis optio quos ratione repellat sequi tempore vel, voluptates.</section>
+<section class="content" id="projects">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aspernatur consequuntur distinctio dolores exercitationem impedit magnam minima mollitia nisi, officia omnis optio quos ratione repellat sequi tempore vel, voluptates.</section>
 </main>
 <footer>
     <div class="container my-0 py-0">
