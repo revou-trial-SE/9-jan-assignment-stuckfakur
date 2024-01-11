@@ -7,12 +7,13 @@ body {
     font-family: Manrope, sans-serif;
 }
 header{
-    z-index: 11;
-    background: url(../asset/images/personal-intro-image.png) no-repeat center;
+    z-index: 5;
+    /*background: url(../asset/images/personal-intro-image.png) no-repeat center;*/
     height: 100vh;
     width: 100vw;
-    margin-top: -70px;
+    /*margin-top: -70px;*/
     background-size: cover;
+    /*position: absolute;*/
 }
 nav {
     z-index: 100;
@@ -122,21 +123,27 @@ div.brands{
 }
 
 /*Header*/
-.container{
+.grandient-fill{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background: url(../asset/images/personal-intro-image.png) no-repeat center;
+
+    height: calc(100vh - 150px);
     width: 100%;
     max-width: 1440px;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 6;
 }
 .gradient:after{
     content: '';
     background: linear-gradient(-45deg,rgba(35, 189, 232, 0.7),rgba(12, 54, 210, 0.75));
     position: fixed;
+    top: 0;
     height: calc(100vh - 150px);
     width: 100vw;
+    z-index: 7;
 }
 .index-image {
     top: 15%;
@@ -152,6 +159,7 @@ div.brands{
 .shape-card{
     margin: 30vh 0 0 10vh !important;
     z-index: 12;
+    position: absolute;
 }
 .flex-card > div.card {
     width: 100%;
@@ -188,6 +196,7 @@ svg{
     bottom: 150px;
     left: 0;
     overflow: visible;
+    z-index: 8;
 }
 
 /*Main*/
@@ -286,6 +295,25 @@ svg{
 #projects {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,0.6657256652661064) 0%, rgba(9,9,121,0.8001794467787114) 35%, rgba(0,212,255,1) 100%);
+
+}
+.carousel-item{
+    padding: 15px;
+    cursor: -webkit-grabbing;
+
+    & img{
+        border-radius: 30px;
+        height: 500px;
+
+        box-shadow: 0px 5px 5px rgba(0,0,0,.21);
+        transition: .25s linear;
+    }
+
+    &:hover{
+        & img{
+            transform: translatey(-1%);
+        }
+    }
 }
 
     /*Footer*/
@@ -340,7 +368,7 @@ svg{
     }
     @media only screen and (max-width: 768px) {
         main{
-            padding-top: calc(30vh + 100px);
+            padding-top: calc(300px);
             margin-bottom: 30vh;
         }
         nav.navbar > div.container-fluid{
@@ -421,7 +449,6 @@ svg{
                 }
             }
         }
-
     }
 
 
