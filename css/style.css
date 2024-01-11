@@ -8,10 +8,8 @@ body {
 }
 header{
     z-index: 11;
-    background: url(../asset/images/personal-intro-image.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../asset/images/personal-intro-image.png) no-repeat center;
     height: 100vh;
     width: 100vw;
     margin-top: -70px;
@@ -33,7 +31,7 @@ footer {
     width: 100%;
     background-color: lightgray;
     position: fixed;
-    bottom: 0%;
+    bottom: 0;
 }
 
 /*classes*/
@@ -48,6 +46,10 @@ footer {
     }
 
     & div.container-fluid > div.collapse ul.navbar-nav li.nav-item a {
+        color: dimgray;
+    }
+
+    & div.container-fluid button {
         color: dimgray;
     }
 }
@@ -78,6 +80,7 @@ div.brands{
 }
 .navbar-toggler {
     padding: 0.5rem 0 !important;
+    color: white;
 }
 .navbar-nav {
     & > li.nav-item .nav-link{
@@ -98,7 +101,7 @@ div.brands{
             top: 100%;
             margin-top: 4px;
             border-radius: 3px;
-            left: 0%;
+            left: 0;
             width: 100%;
             height: 3px;
             transform: scaleX(0);
@@ -183,7 +186,6 @@ svg{
 
 /*Main*/
 .content {
-    border: 1px solid;
     padding: 5rem 2rem;
 }
 
@@ -257,120 +259,150 @@ svg{
         }
     }
 }
-#courses .exp-card .row{
-    & > div.col-3 > div.card {
-        width: 100%;
+
+#courses {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.6657256652661064) 0%, rgba(9,9,121,0.8001794467787114) 35%, rgba(0,212,255,1) 100%);
+
+    & .exp-card .row{
+        & > div.col-3 {
+            & div.card {
+                width: 100%;
+            }
+        }
     }
 }
 
+#skills {
 
-/*Footer*/
-footer {
-    & > div.container {
-        height: 100%;
-        width: 100%;
-        max-width: 1920px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
+}
 
-        & > div.line-1 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            padding: 2rem;
+#projects {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,0.6657256652661064) 0%, rgba(9,9,121,0.8001794467787114) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+
+    /*Footer*/
+    footer {
+        & > div.container {
+            height: 100%;
             width: 100%;
-            border-bottom: 2px solid white;
+            max-width: 1920px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
 
-            & a {
-                padding: 1rem 5rem;
-                color: gray;
-                text-decoration: none;
+            & > div.line-1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 2rem;
+                width: 100%;
+                border-bottom: 2px solid white;
+
+                & a {
+                    padding: 1rem 5rem;
+                    color: #6c757d;
+                    text-decoration: none;
+                }
+            }
+
+            & > div.line-2 {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+
+    /*custom media*/
+    @media only screen and (max-width: 1920px){
+        .container{
+            max-width: 1920px !important;
+        }
+    }
+    @media only screen and (max-width: 1080px){
+        .index-image{
+            margin-left: 0;
+            & img {
+                width: 80%;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        main{
+            padding-top: 60vh;
+            margin-bottom: 30vh;
+        }
+        nav.navbar > div.container-fluid{
+            padding: 0;
+            margin: 0 1rem !important;
+        }
+        header{
+            margin-top: -42vh;
+        }
+        footer > div.container > div.line-1 a {
+            padding: 0.5rem !important;
+        }
+        .index-image {
+            margin-top: -15vh;
+            & img{
+                width: 100%;
+                margin-top: 50vh;
+            }
+        }
+        .gradient:after{
+            height: 100vh;
+        }
+        svg{
+            bottom: 300px;
+        }
+        .shape-card{
+            margin: 30vh 0 0 0 !important;
+
+            & > div.flex-card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 40vh;
             }
         }
 
-        & > div.line-2 {
-            padding-top: 1rem;
-        }
-    }
-}
+        div.exp-card{
+            & > div.card{
+                & > div.card-body {
+                    & div.exp-inner {
+                        flex-direction: column;
+                        align-items: center;
 
+                        & div.exp-logo img {
+                            width: 100%;
+                            max-width: 50vw;
+                        }
 
-/*custom media*/
-@media only screen and (max-width: 1920px){
-    .container{
-        max-width: 1920px !important;
-    }
-}
-@media only screen and (max-width: 1080px){
-    .index-image{
-        margin-left: 0;
-        & img {
-            width: 80%;
-        }
-    }
-}
-@media only screen and (max-width: 768px) {
-    main{
-        padding-top: 60vh;
-        margin-bottom: 30vh;
-    }
-    nav.navbar > div.container-fluid{
-        padding: 0;
-        margin: 0 1rem !important;
-    }
-    header{
-        margin-top: -42vh;
-    }
-    footer > div.container > div.line-1 a {
-        padding: 0.5rem !important;
-    }
-    .index-image {
-        margin-top: -15vh;
-        & img{
-            width: 100%;
-            margin-top: 50vh;
-        }
-    }
-    .gradient:after{
-        height: 100vh;
-    }
-    svg{
-        bottom: 300px;
-    }
-    .shape-card{
-        margin: 30vh 0 0 0 !important;
-
-        & > div.flex-card {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 40vh;
-        }
-    }
-
-    div.exp-card{
-        & > div.card{
-            & > div.card-body {
-                & div.exp-inner {
-                    flex-direction: column;
-                    align-items: center;
-
-                    & div.exp-logo img {
-                        width: 100%;
-                        max-width: 50vw;
-                    }
-
-                    & > div.exp-detail{
-                        width: 100%;
-                        margin: 1rem 0;
+                        & > div.exp-detail{
+                            width: 100%;
+                            margin: 1rem 0;
+                        }
                     }
                 }
             }
         }
-    }
+        #courses {
+            & .exp-card .row{
+                flex-direction: column;
+                & > div.col-3 {
+                    width: 100%;
+                    margin: 0.5rem 0;
+                    & div.card {
+                        width: 100%;
+                    }
+                }
+            }
+        }
 
-}
+    }
 
 
