@@ -8,11 +8,11 @@ body {
 }
 header{
     z-index: 11;
-    background-size: cover;
     background: url(../asset/images/personal-intro-image.png) no-repeat center;
     height: 100vh;
     width: 100vw;
     margin-top: -70px;
+    background-size: cover;
 }
 nav {
     z-index: 100;
@@ -304,10 +304,17 @@ svg{
                 width: 100%;
                 border-bottom: 2px solid white;
 
-                & a {
+                & a.footers-menu {
                     padding: 1rem 5rem;
                     color: #6c757d;
                     text-decoration: none;
+                }
+                & > div.footers-icon {
+                    display: flex;
+                    & a {
+                        margin: auto;
+                        padding: 0.5rem;
+                    }
                 }
             }
 
@@ -339,8 +346,18 @@ svg{
         header{
             margin-top: -42vh;
         }
-        footer > div.container > div.line-1 a {
-            padding: 0.5rem !important;
+        footer > div.container {
+            & > div.line-1 a.footers-menu {
+                padding: 0.5rem !important;
+            }
+            & > div.line-1 > div.footers-icon {
+                display: flex;
+                flex-wrap: nowrap;
+                & a {
+                    padding: 0.5rem !important;
+                    cursor: pointer;
+                }
+            }
         }
         .index-image {
             margin-top: -15vh;
