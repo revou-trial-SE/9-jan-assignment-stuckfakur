@@ -317,6 +317,24 @@ svg {
     background: radial-gradient(circle, rgba(2, 0, 36, 0.6657256652661064) 0%, rgba(9, 9, 121, 0.8001794467787114) 35%, rgba(0, 212, 255, 1) 100%);
 
 }
+.carousel-item {
+    padding: 15px;
+    cursor: -webkit-grabbing;
+
+    & img {
+        border-radius: 30px;
+        height: 500px;
+
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, .21);
+        transition: .25s linear;
+    }
+
+    &:hover {
+        & img {
+            transform: translatey(-1%);
+        }
+    }
+}
 
 /*Footer*/
 footer {
@@ -489,6 +507,13 @@ footer {
             & > div.col-6 {
                 width: 100%;
             }
+        }
+    }
+    .carousel-item {
+
+        & img {
+            border-radius: 30px;
+            height: 300px;
         }
     }
 }
