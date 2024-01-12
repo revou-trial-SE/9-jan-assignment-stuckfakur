@@ -1,12 +1,14 @@
 /*main element*/
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Manrope, sans-serif;
 }
-header{
+
+header {
     z-index: 5;
     /*background: url(../asset/images/personal-intro-image.png) no-repeat center;*/
     height: 100vh;
@@ -15,10 +17,12 @@ header{
     background-size: cover;
     /*position: absolute;*/
 }
+
 nav {
     z-index: 100;
     background-color: transparent !important;
 }
+
 main {
     z-index: 10;
     width: 100vw;
@@ -26,6 +30,7 @@ main {
     position: relative;
     background-color: white;
 }
+
 footer {
     z-index: -1;
     height: 150px;
@@ -34,6 +39,7 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
 /*classes*/
 .navbar-sticky-top.scrolled {
     background-color: #fff !important;
@@ -53,15 +59,18 @@ footer {
         color: dimgray;
     }
 }
-div.brands{
+
+div.brands {
     & > a.navbar-brand {
         font-size: 24px;
         color: white;
     }
-    & span.divider{
+
+    & span.divider {
         color: white;
         font-size: 24px;
     }
+
     & a.navbar-contact {
         font-size: 0.8rem;
         font-weight: bold;
@@ -72,24 +81,27 @@ div.brands{
         cursor: pointer;
         margin-left: 0.5rem;
 
-        &:hover{
+        &:hover {
             color: white;
             background-color: rgba(0, 0, 0, 0.6) !important;
         }
     }
 }
+
 .navbar-toggler {
     padding: 0.5rem 0 !important;
     color: white;
 }
+
 .navbar-nav {
-    & > li.nav-item .nav-link{
+    & > li.nav-item .nav-link {
         position: relative;
 
-        &:after{
+        &:after {
             display: none;
         }
     }
+
     & li.nav-item a.nav-link {
         position: relative;
         color: white;
@@ -112,6 +124,7 @@ div.brands{
         }
     }
 }
+
 .navbar-nav > li.nav-item:hover a.nav-link:after {
     transform: scaleX(1);
     transform-origin: left center;
@@ -123,7 +136,7 @@ div.brands{
 }
 
 /*Header*/
-.grandient-fill{
+.grandient-fill {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,19 +148,22 @@ div.brands{
     top: 0;
     z-index: 6;
 }
-.gradient:after{
+
+.gradient:after {
     content: '';
-    background: linear-gradient(-45deg,rgba(35, 189, 232, 0.7),rgba(12, 54, 210, 0.75));
+    background: linear-gradient(-45deg, rgba(35, 189, 232, 0.7), rgba(12, 54, 210, 0.75));
     position: fixed;
     top: 0;
     height: calc(100vh - 150px);
     width: 100vw;
     z-index: 7;
 }
+
 .index-image {
     top: 15%;
     left: 15%;
     z-index: 12;
+
     & > img {
         margin-top: -5vh;
         margin-left: 15vh;
@@ -155,24 +171,27 @@ div.brands{
         z-index: 11;
     }
 }
-.shape-card{
+
+.shape-card {
     margin: 30vh 0 0 10vh !important;
     z-index: 12;
     position: absolute;
 }
+
 .flex-card > div.card {
     width: 100%;
     max-width: 50vh;
     transition: 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1) !important;
         transform: translateY(-10px);
     }
 
 }
-div.flex-download{
-    & a.btn-download{
+
+div.flex-download {
+    & a.btn-download {
         padding: 0.5rem 1rem;
         margin: 1rem 0.25rem;
         border: 1px solid;
@@ -183,13 +202,14 @@ div.flex-download{
         background-color: rgba(105, 185, 255, 0.15);
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             color: #006ecf;
             background-color: #55afff
         }
     }
 }
-svg{
+
+svg {
     position: absolute;
     width: 100vw;
     bottom: 150px;
@@ -204,7 +224,7 @@ svg{
 }
 
 /*Experiences*/
-.exp-heading{
+.exp-heading {
     & h3 {
         font-weight: bold;
         background-color: blue;
@@ -214,14 +234,15 @@ svg{
         -webkit-text-fill-color: transparent;
     }
 }
-.exp-card{
+
+.exp-card {
     & > div.card {
         width: 100%;
         max-width: 60rem;
         margin: 0.5rem 0.25rem;
         transition: 0.2s ease-in-out;
 
-        &:hover{
+        &:hover {
             box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05), 0 1.5rem 2.2rem rgba(0, 0, 0, 0.1) !important;
             transform: translateY(-10px);
         }
@@ -230,16 +251,16 @@ svg{
 
             & > div.exp-inner {
                 align-items: center;
-                flex-shrink: 1 ;
+                flex-shrink: 1;
                 flex-basis: 100px;
 
-                & .exp-logo img{
+                & .exp-logo img {
                     width: 100%;
                     max-width: 20vw;
                     padding: 0 2rem;
                 }
 
-                & .exp-detail{
+                & .exp-detail {
                     width: 100%;
 
                     & > div.exp-content {
@@ -248,7 +269,7 @@ svg{
                             font-weight: bold;
                         }
 
-                        & p , & small {
+                        & p, & small {
                             margin: 0;
                             font-size: 18px;
                             color: #6c757d;
@@ -256,7 +277,7 @@ svg{
                     }
                 }
 
-                & .exp-more a{
+                & .exp-more a {
                     white-space: nowrap;
                     padding: 0.5rem 1rem;
                     border-radius: 10px;
@@ -264,7 +285,7 @@ svg{
                     text-decoration: none;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background-color: #55afff;
                         color: white;
                     }
@@ -275,12 +296,12 @@ svg{
 }
 
 #courses {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0.6657256652661064) 0%, rgba(9,9,121,0.8001794467787114) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.6657256652661064) 0%, rgba(9, 9, 121, 0.8001794467787114) 35%, rgba(0, 212, 255, 1) 100%);
 
-    & .exp-card .row{
+    & .exp-card .row {
         & > div.col-3 {
-            & div.card img{
+            & div.card img {
                 width: 100%;
             }
         }
@@ -288,175 +309,209 @@ svg{
 }
 
 #skills {
-
+    & > div.flex-skill {
+        width: 100%;
+        max-width: calc(100vw - 300px);
+    }
 }
 
 #projects {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,0.6657256652661064) 0%, rgba(9,9,121,0.8001794467787114) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.6657256652661064) 0%, rgba(9, 9, 121, 0.8001794467787114) 35%, rgba(0, 212, 255, 1) 100%);
 
 }
-.carousel-item{
+
+.carousel-item {
     padding: 15px;
     cursor: -webkit-grabbing;
 
-    & img{
+    & img {
         border-radius: 30px;
         height: 500px;
 
-        box-shadow: 0px 5px 5px rgba(0,0,0,.21);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, .21);
         transition: .25s linear;
     }
 
-    &:hover{
-        & img{
+    &:hover {
+        & img {
             transform: translatey(-1%);
         }
     }
 }
 
-    /*Footer*/
-    footer {
-        & > div.container {
-            height: 100%;
-            width: 100%;
-            max-width: 1920px;
+/*Footer*/
+footer {
+    & > div.container {
+        height: 100%;
+        width: 100%;
+        max-width: 1920px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        & > div.line-1 {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: space-evenly;
-            flex-direction: column;
+            padding: 2rem;
+            width: 100%;
+            border-bottom: 2px solid white;
 
-            & > div.line-1 {
+            & a.footers-menu {
+                padding: 1rem 5rem;
+                color: #6c757d;
+                text-decoration: none;
+
+                &:hover {
+                    color: #006ecf;
+                    transform: translateY(-5px);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+
+            & > div.footers-icon {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                padding: 2rem;
-                width: 100%;
-                border-bottom: 2px solid white;
 
-                & a.footers-menu {
-                    padding: 1rem 5rem;
-                    color: #6c757d;
-                    text-decoration: none;
+                & a {
+                    margin: auto;
+                    padding: 0.5rem;
+
                     &:hover {
-                        color: #006ecf;
                         transform: translateY(-5px);
                         transition: 0.2s ease-in-out;
                     }
                 }
-                & > div.footers-icon {
-                    display: flex;
-                    & a {
-                        margin: auto;
-                        padding: 0.5rem;
-                        &:hover{
-                            transform: translateY(-5px);
-                            transition: 0.2s ease-in-out;
-                        }
-                    }
-                }
             }
+        }
 
-            & > div.line-2 {
-                padding-top: 1rem;
-            }
+        & > div.line-2 {
+            padding-top: 1rem;
         }
     }
+}
 
 
+@media only screen and (max-width: 1080px) {
+    .index-image {
+        top: 15%;
+        margin-left: 0;
 
-    @media only screen and (max-width: 1080px){
-        .index-image{
-            top: 15%;
-            margin-left: 0;
-            & img {
-                width: 80%;
-            }
+        & img {
+            width: 80%;
         }
     }
-    @media only screen and (max-width: 768px) {
-        main{
-            padding-top: calc(300px);
-            margin-bottom: 30vh;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding-top: calc(300px);
+        margin-bottom: 30vh;
+    }
+
+    nav.navbar > div.container-fluid {
+        padding: 0;
+        margin: 0 1rem !important;
+    }
+
+    header {
+        margin-top: -42vh;
+    }
+
+    footer > div.container {
+        & > div.line-1 a.footers-menu {
+            padding: 0.5rem !important;
         }
-        nav.navbar > div.container-fluid{
-            padding: 0;
-            margin: 0 1rem !important;
-        }
-        header{
-            margin-top: -42vh;
-        }
-        footer > div.container {
-            & > div.line-1 a.footers-menu {
+
+        & > div.line-1 > div.footers-icon {
+            display: flex;
+            flex-wrap: nowrap;
+
+            & a {
                 padding: 0.5rem !important;
-            }
-            & > div.line-1 > div.footers-icon {
-                display: flex;
-                flex-wrap: nowrap;
-                & a {
-                    padding: 0.5rem !important;
-                    cursor: pointer;
-                }
+                cursor: pointer;
             }
         }
-        .index-image {
-            position: absolute;
-            top: 15%;
-            left: 0;
-            & img{
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-        .gradient:after{
-            height: 100vh;
-        }
-        svg{
-            bottom: 300px;
-        }
-        .shape-card{
-            margin: 30vh 0 0 0 !important;
+    }
 
-            & > div.flex-card {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin-top: 40vh;
-            }
+    .index-image {
+        position: absolute;
+        top: 15%;
+        left: 0;
+
+        & img {
+            width: 100%;
+            margin-left: 0;
         }
+    }
 
-        div.exp-card{
-            & > div.card{
-                & > div.card-body {
-                    & div.exp-inner {
-                        flex-direction: column;
-                        align-items: center;
+    .gradient:after {
+        height: 100vh;
+    }
 
-                        & div.exp-logo img {
-                            width: 100%;
-                            max-width: 50vw;
-                        }
+    svg {
+        bottom: 300px;
+    }
 
-                        & > div.exp-detail{
-                            width: 100%;
-                            margin: 1rem 0;
-                        }
-                    }
-                }
-            }
+    .shape-card {
+        margin: 30vh 0 0 0 !important;
+
+        & > div.flex-card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40vh;
         }
-        #courses {
-            & .exp-card .row{
-                flex-direction: column;
-                & > div.col-3 {
-                    width: 100%;
-                    margin: 0.5rem 0;
-                    & div.card {
+    }
+
+    div.exp-card {
+        & > div.card {
+            & > div.card-body {
+                & div.exp-inner {
+                    flex-direction: column;
+                    align-items: center;
+
+                    & div.exp-logo img {
                         width: 100%;
+                        max-width: 50vw;
+                    }
+
+                    & > div.exp-detail {
+                        width: 100%;
+                        margin: 1rem 0;
                     }
                 }
             }
         }
     }
+
+    #courses {
+        & .exp-card .row {
+            flex-direction: column;
+
+            & > div.col-3 {
+                width: 100%;
+                margin: 0.5rem 0;
+
+                & div.card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #skills {
+        & > div.flex-skill {
+            flex-direction: column;
+            width: 100% !important;
+            max-width: 80vw !important;
+
+            & > div.col-6 {
+                width: 100%;
+            }
+        }
+    }
+}
 
 
