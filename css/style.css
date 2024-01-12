@@ -128,10 +128,9 @@ div.brands{
     justify-content: center;
     align-items: center;
     background: url(../asset/images/personal-intro-image.png) no-repeat center;
-
     height: calc(100vh - 150px);
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     position: fixed;
     top: 0;
     z-index: 6;
@@ -339,12 +338,21 @@ svg{
                     padding: 1rem 5rem;
                     color: #6c757d;
                     text-decoration: none;
+                    &:hover {
+                        color: #006ecf;
+                        transform: translateY(-5px);
+                        transition: 0.2s ease-in-out;
+                    }
                 }
                 & > div.footers-icon {
                     display: flex;
                     & a {
                         margin: auto;
                         padding: 0.5rem;
+                        &:hover{
+                            transform: translateY(-5px);
+                            transition: 0.2s ease-in-out;
+                        }
                     }
                 }
             }
