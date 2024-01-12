@@ -160,7 +160,7 @@ div.brands {
 }
 
 .index-image {
-    top: 15%;
+    /*top: 15%;*/
     left: 15%;
     z-index: 12;
 
@@ -437,7 +437,8 @@ footer {
 
     .index-image {
         position: absolute;
-        top: 15%;
+        top: unset;
+        margin-top: calc(100vh - 70%);
         left: 0;
 
         & img {
